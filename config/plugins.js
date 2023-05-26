@@ -21,6 +21,10 @@ module.exports = ({ env }) => ({
               defaultFrom: env("MAIL_FROM"),
               defaultReplyTo: env("MAIL_REPLY_TO"),
             },
-        }
+        },
+    },
+    ckeditor: {
+        enabled: true,
+        resolve: "./src/plugins/strapi-plugin-ckeditor"
     }
 })
